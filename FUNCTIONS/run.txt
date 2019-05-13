@@ -1,0 +1,84 @@
+// RUNTIME POLYMORPMISHM
+#include <iostream.h>
+#include <conio.h>
+
+class media
+{
+protected:
+char title[5O] ;
+float price;
+publi c:
+media(char *s, float a)
+{
+strcpy(title, s) ;
+price = a;
+J
+virtual void display() 
+{ 
+}
+}:
+class book: public media
+{
+private:
+int pages;
+public:
+book(char *s, float a, int p):media(s,a)
+{
+pages=P;
+}
+void display();
+};
+
+class tape : public media
+{
+private:
+flOat t1me;
+public:
+tape(char *s, float a,float t):media(s,a)
+{
+time=t;
+}
+void display();
+};
+void book :: display()
+{
+cout << "\n  Tttle: " << title;
+cout << "\n Pages  : " << pages:
+cout << •\n Prfce: • << prfce:
+voi d tape ; : dhpl .,()
+(
+I
+cout << •\n Tftle: • << tftle;
+cout « 1 \n play tf11111: • cc t111t << '•tns•;
+cout << 1 \n pr1ce: • << pr1ce;
+main()
+{
+char *title= new char[30];
+float price, time;
+1nt pages;
+clrscr();
+// Book details
+
+cout << " In ENTER BOOK OETAILS\n";
+cout << " T1tle:"; cin>> title;
+cout << " Price: "; cin >> price;
+cout << " Pages: ": cin >> pages;
+
+book bookl(title , price , pages);
+// Tape details
+
+cout << "\n Enter TAPE DETAILS \n";
+cout << " Title: "; cin » title;
+cout << " Prtce: "; cin >> price;
+cout <<  "Play Pl., tt .. (•Ins): •: ctn>> tt .. ;
+
+tape tapel(title, price. tiine);
+ll'edia• 1ist[2];
+llst[O] • &book!;
+llst[l} • &lapel:
+cout << •\n MEDIA DETAILS•;
+cout << 11 \n ...... BOOK •••••• ";
+list[O} -> diSplay(); I I dlsp lay book detal 1 s
+cout << •\n ...... TAPE . ..••. 11 ;
+llst[l] ->display();// display tape details
+f'tsult 0; 

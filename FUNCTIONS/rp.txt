@@ -1,0 +1,19 @@
+ This information is known to the
+compiler at the compile time and, therefore,
+compiler is a ble to S<llect the appropriate
+function for a particular call at the compile
+time itself. This is called early binding or
+atati.c binding or static linking. Also known
+as compile time polymorphism, early binding simply means that an object is bound to its
+function call at compile time. 
+
+C++ supports a
+mechani1m known as virtual function to achieve run time polymorphism. 
+At run time, when it ie known what class object.I a re under oon.sideration, the appropriate
+version of the function ia invoked. Since the fu.nrticm ii linked w1Lb a particula.r class much
+later aft.er the compilation. this p1ocess is ienned u lat< b1nd11111. II 11 a1oo known asdynamu;
+bindi.1t11 becaUM the aelecboo of the app1opriate function. ia done dynamically at run time. 
+
+ Run time polymorphism is achieved only when a virtual function is accessed through
+a pointer to the base class. It cannot be achieved using object name along with the dot
+operator to access virtual function

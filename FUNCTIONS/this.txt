@@ -1,0 +1,19 @@
+ A thls pointer refers to an object that currently invokes a me1nber function. For example.
+the function call a.sh ow() will set the pointer 'this' to the address of the object 'a'.
+
+ Run time polymorphism is achieved only when a virtual function is accessed through
+a pointer to the base class. It cannot be achieved using object name along with the dot
+operator to access virtual function.
+
+
+A virtual function, equated to zero is called a pure virtual function. It is a function
+dcclan>d in a base class that has no definition relative to the base class. A class containing
+such pure function is caJJed an abstract class. 
+
+
+the function open() can be used to open mutltiple files that use the same stream object.
+
+
+
+
+
